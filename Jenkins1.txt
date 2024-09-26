@@ -1,0 +1,14 @@
+node {
+stage ('git checkout'){
+   echo "code from github"
+}
+stage ('build'){
+   echo "building"
+}
+stage ('test'){
+   echo "testing"
+}
+stage ('deploy'){
+   echo "deploying"
+}
+}
