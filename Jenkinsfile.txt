@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('git scm') {
             steps {
-                echo 'this is code fetch stage'
+                git branch: 'main', url: 'https://github.com/chandrasekhar552002/maven-project.git'
             }
         }
         stage('build') {
